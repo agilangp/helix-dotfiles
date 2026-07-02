@@ -1,0 +1,32 @@
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
+# Inline configuration is also supported
+# https://biomejs.dev/blog/biome-v2-4/#editor-inline-configuration
+[language-server.biome.config.biome.inlineConfig]
+linter.rules.suspicious.noConsole = "off"
+
+[[language]]
+name = "typescript"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "tsx"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "javascript"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "jsx"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
