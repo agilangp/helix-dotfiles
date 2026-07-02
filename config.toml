@@ -1,0 +1,18 @@
+theme = "onedark"
+
+[editor]
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[keys.insert]
+j = { k = "normal_mode" }
+k = { j = "normal_mode" }
