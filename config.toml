@@ -1,10 +1,11 @@
-theme = "onedark"
+theme = "ayu_evolve"
 
 [editor]
 bufferline = "multiple"
 color-modes = true
 cursorline = true
 line-number = "relative"
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
