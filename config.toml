@@ -14,6 +14,12 @@ insert = "bar"
 render = true
 character = "╎"
 
+[editor.whitespace.render]
+space = "all"
+
+[editor.whitespace.characters]
+space = "·"
+
 [keys.insert]
 j = { k = "normal_mode" }
 k = { j = "normal_mode" }
