@@ -7,6 +7,10 @@ args = ["lsp-proxy"]
 [language-server.biome.config.biome.inlineConfig]
 linter.rules.suspicious.noConsole = "off"
 
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
 [[language]]
 name = "typescript"
 roots = ["biome.json", "biome.jsonc", "package.json"]
@@ -16,7 +20,7 @@ auto-format = true
 [[language]]
 name = "tsx"
 roots = ["biome.json", "biome.jsonc", "package.json"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome", "tailwindcss-ls" ]
 auto-format = true
 
 [[language]]
